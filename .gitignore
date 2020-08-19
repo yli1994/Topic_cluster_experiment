@@ -1,3 +1,4 @@
 *.png
 *.npy
 embeddings
+__pycache__
