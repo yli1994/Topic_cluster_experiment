@@ -18,4 +18,4 @@
 
 ### 三、方法SIF+Kmeans结果：
 
-![SIF_Kmeans](results\SIF_Kmeans.png)
+<img src="results\SIF_Kmeans.png" alt="SIF_Kmeans" style="zoom:60%;" />
