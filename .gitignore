@@ -2,3 +2,4 @@
 *.npy
 embeddings
 __pycache__
+.idea
