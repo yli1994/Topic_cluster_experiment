@@ -31,16 +31,16 @@ senvec_mean = dp._ave_sen_vector(token_list, embedding_dim, embedding_matrix)
 SE = SifEmbedding()
 senvec_sif = SE.sif_sen_vector(embedding_matrix, token_list)
 #%%
-_, kmeans_labels = Cluster.kmeans_cluster(3, senvec_mean)
+_, mean_kmeans_labels = Cluster.kmeans_cluster(4, senvec_mean)
 #%%
-_, gmm_labels = Cluster.gmm_cluster(3, senvec_mean)
+_, mean_gmm_labels = Cluster.gmm_cluster(4, senvec_mean)
 #%%
-_, sif_kmeans_labels = Cluster.kmeans_cluster(3, senvec_sif)
+_, sif_kmeans_labels = Cluster.kmeans_cluster(4, senvec_sif)
 #%%
-_, sif_gmm_labels = Cluster.gmm_cluster(3, senvec_sif)
+_, sif_gmm_labels = Cluster.gmm_cluster(4, senvec_sif)
 #%%
 TV = TsneVisualize()
-kmeas_proj = TV.tsne_proj(senvec_mean)
+kmeans_proj = TV.tsne_proj(senvec_mean)
 sif_proj = TV.tsne_proj(senvec_sif)
 #%%
-TV.plot_dist(sif_proj, sif_kmeans_labels, saveimg=False)
+TV.plot_dist(sif_proj,  sif_kmeans_labels, saveimg=True)

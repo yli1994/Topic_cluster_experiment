@@ -15,3 +15,7 @@
 聚类：Kmeans和GMM， 后续会加入别的方法
 
 (数据集是一个轻量的情感分类数据集，标签对聚类实际没有用处，随便找的)
+
+### 三、方法SIF+Kmeans结果：
+
+![SIF_Kmeans](results\SIF_Kmeans.png)
